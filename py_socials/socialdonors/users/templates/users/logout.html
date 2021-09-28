@@ -1,0 +1,12 @@
+{% extends 'home/base.html' %}
+<!-- {% load crispy_forms_tags %} -->
+
+{% block content %} 
+        <span><a href="{% url 'home-page' %}">socialdonors</a></span>
+        <h2>you have logged Out</h2>
+        <div class="border-top pt-4">
+            <small class="text-muted">
+                Login again<a class="ml-2" href="{% url 'log-page' %}">login</a>
+            </small>
+        </div>
+{% endblock content %}
